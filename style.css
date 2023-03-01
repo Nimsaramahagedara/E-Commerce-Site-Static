@@ -316,7 +316,14 @@ ul{
     .menu-icon{
         display: block;
     }
+
+    .row-header{
+        flex-direction: column;
+    }
     .offer{
         height: unset;
+    }
+    .row-offer div{
+        flex-basis: unset;
     }
 }
