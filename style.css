@@ -234,7 +234,7 @@ cursor:pointer;
 }
 .row-footer{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -254,7 +254,7 @@ margin-bottom: 20px;
 }
 .footer-col-2{
     flex:1;
-    text-align: center;
+    text-align: left;
 }
 .footer-col-2 img{
     width:180px;
@@ -262,7 +262,7 @@ margin-bottom: 20px;
 }
 .footer-col-3,.footer-col-4{
     flex-basis: 12%;
-    text-align: center;
+    text-align: left;
 }
 ul{
     list-style-type: none;
