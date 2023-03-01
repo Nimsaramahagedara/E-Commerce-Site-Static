@@ -4,7 +4,7 @@ menuBtn.addEventListener("click", menuToggle);
 console.log(menuItem);
 function menuToggle (){
     if(menuItem.style.height == "0px" || menuItem.style.height == ""){
-        menuItem.style.height = "190px";
+        menuItem.style.height = "150px";
         
     }else{
         menuItem.style.height = "0px";
