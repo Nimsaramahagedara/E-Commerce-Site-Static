@@ -318,6 +318,7 @@ ul{
     }
 
     .row-header{
+        margin-top: 0px;
         flex-direction: column;
     }
     .offer{
@@ -325,5 +326,8 @@ ul{
     }
     .row-offer div{
         flex-basis: unset;
+    }
+    .row-footer{
+        flex-direction: column;
     }
 }
