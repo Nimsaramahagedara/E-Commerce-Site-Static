@@ -163,7 +163,9 @@ h4{
 }
 .viewall-btn{
     display: block;
-    width: fit-content;
+    width: 125px;
+    height: 50px;
+    text-align: center;
     text-decoration: none;
     color: var(--primaryCol);
     margin: 10px auto;
@@ -176,6 +178,82 @@ h4{
 .viewall-btn:hover{
     background-color: var(--primaryCol);
     color: white;
+}
+/*ABOUT US*/
+.aboutUs{
+
+}
+.aboutUs div{
+    display: flex;
+    margin: 30px auto;
+}
+.aboutUs div div{
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+.title01{
+    position: relative;
+    color: #555;
+    width: max-content;
+    margin: 20px auto;
+}
+.aboutUs div .textarea p{
+    margin: 10px auto;
+}
+.aboutUs div div img{
+    width: 100%;
+}
+.title01::after{
+    content:'';
+    background: var(--primaryCol);
+    width:80px;
+    height:5px;
+    border-radius: 5px;
+    position:absolute;
+    top: 32px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width:1000px){
+    .title01{
+        text-align: center;
+    }
+    .aboutUs div{
+        flex-direction: column;
+    }
+    .aboutUs div div img{
+        max-width: 300px;
+    }
+}
+
+/*SERVICES*/
+.small-container .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 10px;
+}
+.small-container .box{
+    background:linear-gradient(45deg, red, blue);
+    flex-basis: 18%;
+    padding: 20px 30px;
+}
+.small-container .box p{
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@media only screen and (max-width:1000px){
+    .small-container .box{
+        flex-basis: 30%;
+    }
+}
+@media only screen and (max-width:864px){
+    .small-container .box{
+        flex-basis: 48%;
+    }
 }
 /*OFFER*/
 .offer{
@@ -290,6 +368,10 @@ ul{
 }
 .copyright{
     text-align: center;
+}
+.footer-col-4 ul li a i{
+    color: white;
+    font-size: 24px;
 }
 
 /*menu bar*/
