@@ -454,7 +454,7 @@ ul{
     position:fixed;
     top: 0;
     left: 0;
-    visibility: show;
+    visibility: hidden;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0.5);
