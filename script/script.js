@@ -11,4 +11,13 @@ function menuToggle (){
     }
 }
 
+function popUpShow(){
+    const popUp = document.getElementById("PopUp");
+    popUp.style.visibility = "visible";
+}
+function Close(){
+    const popUp = document.getElementById("PopUp");
+    popUp.style.visibility = "hidden";
+}
+
   

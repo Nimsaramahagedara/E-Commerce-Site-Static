@@ -272,7 +272,7 @@ h4{
 }
 /*OFFER*/
 .offer{
-    background: radial-gradient(white, black);
+    background: radial-gradient(#30246f, black);
     margin-top:80px;
     padding:40px 0;
     /*height: 100vh;*/
@@ -289,8 +289,19 @@ h4{
 .col-2 .offer-img{
     padding:50px;
 }
+.row-offer .col-2 small {
+    color: white;
+}
 small{
     color:#555;
+}
+
+/*Clients*/
+.clientsRow{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 /*Testimonial*/
 .testimonial{
@@ -387,6 +398,7 @@ ul{
 .footer-col-4 ul li a i{
     color: white;
     font-size: 24px;
+    margin-right: 5px;
 }
 
 /*menu bar*/
@@ -435,5 +447,51 @@ ul{
     }
     .row-footer{
         flex-direction: column;
+    }
+}
+.popUpContainer{
+    display: block;
+    position:fixed;
+    top: 0;
+    left: 0;
+    visibility: show;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+.popup-message{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    background-color: white;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    padding: 20px;
+}
+.popup-message .close-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.popup-message .textarea h2{
+    color: var(--primaryCol);
+    margin-top: 10px;
+}
+.popup-message .textarea p{
+    color: #333;
+}
+#closeBtn{
+    cursor: pointer;
+    padding: 10px;
+}
+.popup-message .close-bar h2{
+    color: #555;
+}
+
+@media only screen and (max-width:1000px){
+    .popup-message{
+        width: 90%;
     }
 }

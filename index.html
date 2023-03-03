@@ -59,7 +59,7 @@
                     customers, systems integrators, contractors and project 
                     operators are our valuable customers who benefit from 
                     our services. </p>
-                <a href="" class="viewall-btn">View more</a>
+                <button class="viewall-btn" onclick="popUpShow()">View more</button>
             </div>
             <div class="imagearea">
                 <img src="images/ADSS-Standard.jpg" alt="">
@@ -246,7 +246,7 @@
         <div class="brands">
             <div class="small-container">
                 <h2 class="title">Our Clients</h2>
-                <div class="row">
+                <div class="clientsRow">
                     <div class="col-5">
                         <img src="images/clients/SLTMobitel_Logo.svg.png">
                     </div>
@@ -334,13 +334,6 @@
                        <li><a href="mobile:0773406692">0773406692</a></li>
                    </ul>
                 </div>
-                <!--
-                <div class="footer-col-2">
-                    <img src="images/logo 2-01.png" alt="">
-                    <p>To help telecommunication networks to overcome 
-                        existing network bottlenecks and provide premier
-                        solutions for daily expanding business</p>
-                </div>-->
                 <div class="footer-col-1">
                     <h3>Co-Owner</h3>
                     <ul>
@@ -365,6 +358,26 @@
             <p class="copyright"> Designed And Developed By <a href="http://dynamicbiz.org.lk/">Dynamic Biz</a> 2023</p>
         </div>
     </div>
+    <div class="popUpContainer" id="PopUp">
+        <div class="popup-message">
+        <div class="close-bar">
+            <h2>About Us</h2>
+            <i class="fa-solid fa-xmark" id="closeBtn" onclick="Close()"></i>
+        </div>
+        <hr>
+        <div class="textarea">
+            <h2>Our Mission</h2>
+            <p>To help telecommunication networks to overcome 
+                existing network bottlenecks and provide premier
+                solutions for daily expanding business</p>
+            <h2>Our Vision</h2>
+            <p>We are committed to bringing the world into a tightly 
+                connected network, to drive it towards innovations for 
+                sustainability.</p>
+        </div>
+        </div>
+    </div>
+    
     <script src="script/script.js"></script>
 </body>
 
